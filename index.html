@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main/styles.css" />
+    <link rel="stylesheet" href="styles/base/styles.css" />
+    <link rel="stylesheet" href="styles/header/styles.css" />
+    <link rel="stylesheet" href="styles/about/styles.css" />
+    <link rel="stylesheet" href="styles/command-line/styles.css" />
+    <link rel="stylesheet" href="styles/projects/styles.css" />
+    <link rel="stylesheet" href="styles/footer/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Zak Schenck</title>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <div id="bg-fade-div"></div>
+    <div id="blur-overlay"></div>
+    <div class="scroll-bar__container">
+      <div id="scroll-bar"></div>
+    </div>
+    <main>
+      <header>
+        <img
+          src="assets/header/zlogo.png"
+          alt="Zak logo"
+        />
+        <nav>
+          <a
+            href="#"
+            >Home</a
+          >
+          <a
+            href="#"
+            >About</a
+          >
+          <a
+            href="#"
+            >Project</a
+          >
+          <a
+            href="#"
+            >Contact</a
+          >
+        </nav>
+      </header>
+
+      <section class="portfolio__home">
+        <h1 data-aos="zoom-out-right" data-aos-duration="600">Hello,</h1>
+        <h1 data-aos="flip-left" data-aos-duration="600" data-aos-delay="400">
+          My name is <span>Zak Schenck</span>.
+        </h1>
+        <h1 data-aos="flip-left" data-aos-delay="800" data-aos-duration="600">
+          I'm a <span>Fullstack</span> Web Developer
+        </h1>
+        <div class="home__tech-container" data-aos-delay="1200">
+          <img
+            src="https://static-00.iconduck.com/assets.00/vue-icon-512x439-f6q4zral.png"
+            alt="technology icon"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="300"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            alt="technology icon"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="300"
+          />
+          <img
+            src="https://pngimg.com/d/php_PNG10.png"
+            alt="technology icon"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="300"
+          />
+          <img
+            src="https://sass-lang.com/assets/img/styleguide/seal-color.png"
+            alt="technology icon"
+            data-aos="fade-up"
+            data-aos-delay="800"
+            data-aos-duration="300"
+          />
+          <img
+            src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+            alt="technology icon"
+            data-aos="fade-up"
+            data-aos-delay="1000"
+            data-aos-duration="300"
+          />
+          <img
+            src="https://pngimg.com/d/mysql_PNG23.png"
+            alt="technology icon"
+            data-aos="fade-up"
+            data-aos-delay="1200"
+            data-aos-duration="300"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png"
+            alt="technology icon"
+            data-aos="fade-up"
+            data-aos-delay="1400"
+            data-aos-duration="300"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
+            alt="technology icon"
+            data-aos="fade-up"
+            data-aos-delay="1600"
+            data-aos-duration="300"
+          />
+        </div>
+        <button
+          id="home__cmd-line-btn"
+          data-aos="flip-left"
+          data-aos-delay="1500"
+          data-aos-duration="600"
+        >
+          <span
+            ><img
+              src="https://devblogs.microsoft.com/commandline/wp-content/uploads/sites/33/2019/03/CommandLineIcon.png"
+              alt="command line button" /></span
+          >Command Line
+        </button>
+      </section>
+
+      <div id="home__command-line">
+        <div class="cmn-line__main-banner">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Msdos-icon.svg"
+            alt="msdos logo"
+          />
+          <h1>MS-DOS Prompt -E</h1>
+          <div class="cmn-line__exit-container">
+            <div>-</div>
+            <div>X</div>
+          </div>
+        </div>
+        <div class="cmn-line__container">
+          <div class="cmd-line__sub-banner">
+            <h2>L 15</h2>
+            <h2>C 4</h2>
+            <h2>AW</h2>
+            <h2>74k</h2>
+            <h2>`q:\autoexec.bat</h2>
+          </div>
+          <h3>echo off</h3>
+          <h3>prompt $p$g</h3>
+          <h3>:dos</h3>
+          <h3>TYPE "help" for commands</h3>
+          <div id="output"></div>
+          <div class="cmn-line__input-container">
+            <h3>>>></h3>
+            <input id="terminal-input" type="text" />
+          </div>
+        </div>
+      </div>
+
+      <section id="about-section">
+        <h1 id="about-text" data-aos="flip-left" data-aos-duration="600">
+          ABOUT
+        </h1>
+        <div class="about-container">
+          <img
+            src="assets/header/profilepic.png"
+            id="profile"
+            alt="profile picture"
+            data-aos="flip-left"
+            data-aos-duration="600"
+          />
+          <div class="paragraph-column">
+            <p
+              id="about-paragraph"
+              data-aos="flip-left"
+              data-aos-duration="600"
+            >
+              Hello! My name is Zak Schenck and I am a Web Developer from
+              Massachusetts. I love using cutting edge technologies for my
+              projects such as Laravel, Typescript, along with Vue. I also have
+              experience in React.
+            </p>
+            <p id="technologies" data-aos="flip-left" data-aos-duration="600">
+              Other technologies I'm interested in:
+            </p>
+            <div
+              class="tech-container"
+              data-aos="flip-left"
+              data-aos-duration="600"
+            >
+              <p><span>&#9826;</span> C#/.NET</p>
+              <p class="tech-text"><span>&#9826;</span> Ruby on Rails</p>
+              <p class="tech-text"><span>&#9826;</span> Angular</p>
+              <p><span>&#9826;</span> Svelte</p>
+              <p class="tech-text"><span>&#9826;</span> Java/Spring</p>
+              <p class="tech-text"><span>&#9826;</span> Next.js</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects-section">
+        <h1 id="projects-text">PROJECTS</h1>
+        <div
+          class="project project-1"
+          data-aos="fade-left"
+          data-aos-duration="600"
+        >
+          <img
+            src="./assets/projects/polyscript.png"
+            alt="project image"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h3>CLI</h3>
+            <h1>Polyscript</h1>
+            <p class="description">
+              Huge <span>WIP</span> educational resource for non native English
+              speakers that translates Javascript keywords into the user's
+              respective language using <span>Babel</span> AST Traverse. This is
+              a start to a large project.
+            </p>
+            <p>Babel&nbsp; Vue 3&nbsp; Node.js&nbsp;</p>
+            <div class="links">
+              <a
+                href="https://zakschenck.github.io/polyscript-js/"
+                target="_blank"
+                ><img
+                  src="https://img.icons8.com/?size=100&id=7867&format=png"
+                  id="link"
+                  alt="link"
+              /></a>
+              <a
+                href="https://github.com/ZakSchenck/polyscript-js"
+                target="_blank"
+                ><img
+                  src="https://img.icons8.com/?size=100&id=12599&format=png"
+                  id="ghub"
+                  alt="github"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project" data-aos="fade-right" data-aos-duration="600">
+          <div class="project-info">
+            <h3>Discord Bot</h3>
+            <h1>Frameality</h1>
+            <p class="description">
+              <span>Discord bot</span> utilizing the backend built with
+              <span>PHP</span>. Takes user input based on desired frame data and
+              returns it.
+            </p>
+            <p>PHP&nbsp; SCSS&nbsp; Composer&nbsp;</p>
+            <div class="links">
+              <a
+                href="https://zakschenck.github.io/polyscript-js/"
+                target="_blank"
+                ><img
+                  src="https://img.icons8.com/?size=100&id=7867&format=png"
+                  id="link"
+                  alt="link"
+              /></a>
+              <a
+                href="https://github.com/ZakSchenck/polyscript-js"
+                target="_blank"
+                ><img
+                  src="https://img.icons8.com/?size=100&id=12599&format=png"
+                  id="ghub"
+                  alt="github"
+              /></a>
+            </div>
+          </div>
+          <img
+            src="assets/projects/frame.png"
+            alt="project image"
+            class="project-img"
+          />
+        </div>
+
+        <div class="project" data-aos="fade-left" data-aos-duration="600">
+            <img
+            src="assets/projects/ewa.png"
+            alt="project image"
+            class="project-img"
+          />
+          <div class="project-info">
+            <h3>Frontend SPA</h3>
+            <h1>Entertainment Web App</h1>
+            <p class="description">
+              <span>Single Page Application</span> similar to services like
+              Netflix! You can bookmark and search for your favorite movies.
+              Built with <span>React.</span> Wireframe from
+              <span>Frontend Mentor</span>
+            </p>
+            <p>React&nbsp; Sass/SCSS&nbsp; React-Router</p>
+            <div class="links">
+                <a
+                href="https://zakschenck.github.io/polyscript-js/"
+                target="_blank"
+                ><img
+                  src="https://img.icons8.com/?size=100&id=7867&format=png"
+                  id="link"
+                  alt="link"
+              /></a>
+              <a
+                href="https://github.com/ZakSchenck/polyscript-js"
+                target="_blank"
+                ><img
+                  src="https://img.icons8.com/?size=100&id=12599&format=png"
+                  id="ghub"
+                  alt="github"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project" data-aos="fade-right" data-aos-duration="600">
+            <div class="project-info">
+              <h3>JS Library</h3>
+              <h1>Azureleaf</h1>
+              <p class="description">
+                <span>Javascript</span> utility <span>library</span> for manipulating data structures. Includes objects, array, strings, etc.
+              </p>
+              <p>Javascript ES6+</p>
+              <div class="links">
+                <a
+                href="https://zakschenck.github.io/polyscript-js/"
+                target="_blank"
+                ><img
+                  src="https://img.icons8.com/?size=100&id=7867&format=png"
+                  id="link"
+                  alt="link"
+              /></a>
+              <a
+                href="https://github.com/ZakSchenck/polyscript-js"
+                target="_blank"
+                ><img
+                  src="https://img.icons8.com/?size=100&id=12599&format=png"
+                  id="ghub"
+                  alt="github"
+              /></a>
+              </div>
+            </div>
+            <img src="assets/projects/azureleaf.png" alt="project image" class="project-img" />
+          </div>
+      </section>
+
+          <!-- CONTACT SECTION -->
+    <footer id="contact-section" data-aos="zoom-in" data-aos-duration="600">
+        <h1 id="contact-text">CONTACT</h1>
+        <p>Want to work together? Let me know!</p>
+        <form action="https://formspree.io/f/xeqnaqev" method="post" id="contact-form" class="contact-section">
+          <input type="email" required placeholder="Your Email" name="_replyto" />
+          <input type="text" id="telephone" placeholder="Your Name" required />
+          <textarea required maxlength="240" class="message-box" placeholder="Your Message" name="message"></textarea>
+          <button type="submit" id="message">Submit</button>
+        </form>
+        <p id="created-text">Website created by Zak Schenck</p>
+        <div class="socials-footer">
+          <a href="https://www.linkedin.com/in/zak-schenck-104792222/" target="_blank">
+            <img src="https://img.icons8.com/?size=100&id=8808&format=png" />
+          </a>
+          <a href="https://github.com/zakSchenck/" target="_blank"><img src="https://img.icons8.com/?size=100&id=12599&format=png" /></a>
+          <a href="https://codepen.io/ZakSchenck" target="_blank"><img src="https://img.icons8.com/?size=100&id=38382&format=png" /></a>
+        </div>
+      </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="js/particles-config.js"></script>
+    <script src="js/command-line.js"></script>
+    <script src="js/loading-bar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

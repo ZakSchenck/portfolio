@@ -1,0 +1,52 @@
+@import '../base/styles.scss';
+
+// HEADER SECTION
+header {
+    height: 80px;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: row;
+    padding: 0 10%;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    img {
+      width: auto;
+      height: 60px;
+      filter: hue-rotate(160deg) saturate(150%);
+      border-radius: 50%;
+      border: 2px solid rgb(191, 46, 46);
+      padding: 6px;
+      transition: 0.4s;
+      &:hover {
+        filter: hue-rotate(270deg) saturate(240%);
+        transition: 0.4s;
+      }
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      justify-content: flex-end;
+      width: 100%;
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 10px;
+        transition: color 0.3s, text-shadow 0.3s;
+        text-shadow: 0 0 3px rgba(12, 240, 189, 0.75),
+          0 0 6px rgba(12, 240, 189, 0.75), 0 0 9px rgba(12, 240, 189, 0.75);
+        &:hover {
+          color: rgb(18, 198, 159); /* A lighter hover color */
+          text-shadow: 0 0 3px rgba(255, 255, 255, 1),
+            0 0 6px rgba(255, 255, 255, 1), 0 0 9px rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+  

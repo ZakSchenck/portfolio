@@ -1,0 +1,58 @@
+@import '../base/styles.scss';
+// MAIN SECTION
+.portfolio__home {
+    margin-bottom: 380px;
+    margin-left: 220px;
+    margin-top: 110px;
+    h1 {
+      color: white;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 65px;
+      z-index: 1;
+      span {
+        color: $theme-color;
+        z-index: 1;
+      }
+    }
+  
+    button {
+      background-color: $vintage-color;
+      border-top: 4px solid white;
+      border-left: 4px solid white;
+      border-bottom: 4px solid black;
+      border-right: 4px solid black;
+      font-weight: bold;
+      font-size: 30px;
+      padding: 6px 12px;
+      margin-top: 34px;
+      font-family: "VT323", monospace;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 1;
+      img {
+        border-radius: 5px;
+        width: 25px;
+        height: 25px;
+      }
+      &:active {
+        background-color: #e2e1e1;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .home__tech-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-top: 12px;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }

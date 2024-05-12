@@ -1,0 +1,115 @@
+@import '../base/styles.scss';
+// PROJECTS SECTION
+#projects-section {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #projects-text {
+      font-size: 40px;
+      position: relative;
+      color: white;
+      &::before {
+        content: "";
+        bottom: -12px;
+        position: absolute;
+        height: 7px;
+        width: 150px;
+        background-color: $theme-color;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    #projects-text {
+      font-size: 40px;
+      position: relative;
+      &::before {
+        content: "";
+        bottom: -12px;
+        position: absolute;
+        height: 7px;
+        width: 150px;
+        background-color: $theme-color;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .project {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: relative;
+      margin-top: 100px;
+      height: min-content;
+      margin-bottom: 50px;
+      box-shadow: 
+      0 0 3px rgba(12, 240, 189, 0.7),
+      0 0 6px rgba(12, 240, 189, 0.6), 
+      0 0 15px rgba(12, 240, 189, 0.5), 
+      0 0 15px rgba(12, 240, 189, 0.4), 
+      0 0 25px rgba(12, 240, 189, 0.3),
+      0 0 25px rgba(12, 240, 189, 0.1);
+      img {
+        max-width: 500px;
+        height: auto;
+        border-radius: 4px;
+      }
+      h1 {
+        text-align: right;
+        margin-right: 8px;
+      }
+      h3 {
+        font-size: 20px;
+        color: $theme-color;
+        text-align: right;
+        font-family: "Spline Sans Mono", monospace;
+        margin-right: 8px;
+      }
+      p {
+        font-family: "Spline Sans Mono", monospace;
+        text-align: right;
+        color: #8891b0;
+        margin-right: 8px;
+        
+      }
+      .description {
+        font-family: "Raleway", sans-serif;
+        background-color: #10213f;
+        box-shadow: 1px 1px 10px black;
+        padding: 20px;
+        margin-right: 0;
+        span {
+          color: $theme-color;
+        }
+      }
+      .project-info {
+        width: 500px;
+        min-height: 288px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        backdrop-filter: blur(10px);
+        padding: 4px;
+        box-shadow: 1px 1px 10px black;
+        gap: 20px;
+        color: white;
+        .links {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 5px;
+          margin-left: auto;
+          margin-right: 8px;
+          &:hover {
+            cursor: pointer;
+          }
+          img {
+            width: 40px;
+            height: 40px;
+            filter: brightness(0) invert(1);
+          }
+        }
+      }
+    }
+  }
+  

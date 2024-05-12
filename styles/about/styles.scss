@@ -1,0 +1,71 @@
+@import '../base/styles.scss';
+
+// About section
+#about-section {
+    margin: 58vh auto;
+    max-width: 950px;
+    z-index: 2;
+    h1 {
+      font-size: 40px;
+      position: relative;
+      text-align: center;
+      color: white;
+      &::before {
+        content: "";
+        bottom: -12px;
+        position: absolute;
+        height: 7px;
+        width: 100px;
+        background-color: $theme-color;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .about-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 30px;
+      width: 950px;
+      .paragraph-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .tech-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+          grid-gap: 0;
+          width: 450px;
+          margin-top: -10px;
+          margin-right: auto;
+          margin-top: 15px;
+          p {
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            span {
+              color: $theme-color;
+              font-size: 11px;
+            }
+          }
+        }
+        #technologies {
+          color: #8891af;
+          margin-top: 10px;
+        }
+        p {
+          line-height: 28px;
+          margin-right: auto;
+          color: white;
+        }
+      }
+      img {
+        width: 450px;
+        height: auto;
+      }
+    }
+  }
+  
+  
