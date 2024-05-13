@@ -11,6 +11,9 @@ $cmd-line: #00009f;
 
 body {
   font-family: Raleway;
+  overflow-x: hidden;
+  padding-top: 100px;
+  scroll-behavior: smooth;
   &::before {
     content: "";
     position: fixed;
@@ -59,15 +62,13 @@ body {
   width: 350px;
   background-color: black;
   position: fixed;
-  height: min-height;
   left: 50%;
   transform: translateX(-50%);
-  padding: 3px;
-  bottom: 60px;
+  top: 80px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   z-index: 4;
+  padding: 4px;
   gap: 8px;
   p {
     color: $theme-color;
@@ -78,6 +79,7 @@ body {
   width: 0;
   background-color: $theme-color;
   height: 8px;
+  top: 60px;
   z-index: 4;
 }
 

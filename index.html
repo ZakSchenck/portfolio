@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="height=device-height, 
+    width=device-width, initial-scale=1.0, 
+    minimum-scale=1.0, maximum-scale=1.0, 
+    user-scalable=no, target-densitydpi=device-dpi">
     <link rel="stylesheet" href="styles/main/styles.css" />
     <link rel="stylesheet" href="styles/base/styles.css" />
     <link rel="stylesheet" href="styles/header/styles.css" />
@@ -30,7 +33,7 @@
   <body>
     <div id="particles-js"></div>
     <div id="bg-fade-div"></div>
-    <div id="blur-overlay"></div>
+    <div id="blur-overlay" class="cmn-line__close-btn"></div>
     <div class="scroll-bar__container">
       <div id="scroll-bar"></div>
     </div>
@@ -43,24 +46,30 @@
         <nav>
           <a
             href="#"
+            onclick="scrollToTop()"
             >Home</a
           >
           <a
-            href="#"
+            href="#about-section"
             >About</a
           >
           <a
-            href="#"
-            >Project</a
+            href="#projects-section"
+            >Projects</a
           >
           <a
-            href="#"
+            href="#contact-section"
             >Contact</a
           >
         </nav>
+        <div class="hamburger-container">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
       </header>
 
-      <section class="portfolio__home">
+      <section class="portfolio__home" id="home">
         <h1 data-aos="zoom-out-right" data-aos-duration="600">Hello,</h1>
         <h1 data-aos="flip-left" data-aos-duration="600" data-aos-delay="400">
           My name is <span>Zak Schenck</span>.
@@ -148,15 +157,14 @@
           />
           <h1>MS-DOS Prompt -E</h1>
           <div class="cmn-line__exit-container">
-            <div>-</div>
-            <div>X</div>
+            <div class="cmn-line__close-btn">-</div>
+            <div class="cmn-line__close-btn">X</div>
           </div>
         </div>
         <div class="cmn-line__container">
           <div class="cmd-line__sub-banner">
             <h2>L 15</h2>
             <h2>C 4</h2>
-            <h2>AW</h2>
             <h2>74k</h2>
             <h2>`q:\autoexec.bat</h2>
           </div>
@@ -384,6 +392,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="./js/particles-config.js"></script>
     <script src="./js/command-line.js"></script>
+    <script src="./js/menu.js"></script>
     <script src="js/loading-bar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>

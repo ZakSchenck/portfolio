@@ -2,17 +2,18 @@
 
 // HEADER SECTION
 header {
-    height: 80px;
-    width: 100%;
-    background-color: transparent;
-    backdrop-filter: blur(8px);
-    display: flex;
-    flex-direction: row;
-    padding: 0 10%;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 4;
+  height: 80px;
+  width: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: row;
+  padding: 0 10vw;
+  align-items: center;
+  position: fixed;
+  max-width: 100%;
+  top: 0;
+  z-index: 4;
     img {
       width: auto;
       height: 60px;
@@ -47,6 +48,21 @@ header {
             0 0 6px rgba(255, 255, 255, 1), 0 0 9px rgba(255, 255, 255, 1);
         }
       }
+    }
+  }
+
+  .hamburger-container {
+    width: 35px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    margin-left: auto;
+    div {
+        height: 5px;
+        width: 100%;
+        background-color: $theme-color;
     }
   }
   
