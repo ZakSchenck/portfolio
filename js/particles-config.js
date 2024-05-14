@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       },
       "line_linked": {
-        "enable": true,
+        "enable": false, // Disable the lines
         "distance": 150,
         "color": "#32a852",
         "opacity": 0.4,
@@ -107,6 +107,4 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     "retina_detect": true
   });
-
-
-})
+});
