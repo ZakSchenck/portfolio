@@ -24,7 +24,7 @@ body::before {
           mask-image: radial-gradient(circle, transparent 25%, black 100%);
 }
 
-#confetti-canvas {
+#vanta-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -32,6 +32,7 @@ body::before {
   height: 100%;
   pointer-events: none;
   z-index: -1;
+  filter: brightness(0.8);
 }
 
 #blur-overlay {
