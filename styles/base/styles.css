@@ -24,6 +24,17 @@ body::before {
           mask-image: radial-gradient(circle, transparent 25%, black 100%);
 }
 
+#vanta-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  filter: brightness(0.8);
+}
+
 #blur-overlay {
   width: 100%;
   height: 100%;
@@ -35,16 +46,6 @@ body::before {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   display: none;
-}
-
-#particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom right, rgb(4, 47, 54), rgb(0, 22, 28), black, black, black, black);
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
 
 .scroll-bar__container {

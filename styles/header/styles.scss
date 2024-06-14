@@ -39,13 +39,9 @@ header {
         font-weight: bold;
         font-size: 18px;
         padding: 10px;
-        transition: color 0.3s, text-shadow 0.3s;
-        text-shadow: 0 0 3px rgba(12, 240, 189, 0.75),
-          0 0 6px rgba(12, 240, 189, 0.75), 0 0 9px rgba(12, 240, 189, 0.75);
+        transition: 0.3s;
         &:hover {
-          color: rgb(18, 198, 159); /* A lighter hover color */
-          text-shadow: 0 0 3px rgba(255, 255, 255, 1),
-            0 0 6px rgba(255, 255, 255, 1), 0 0 9px rgba(255, 255, 255, 1);
+          color: rgb(18, 198, 159); 
         }
       }
     }
