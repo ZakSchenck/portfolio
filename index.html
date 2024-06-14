@@ -2,10 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="height=device-height, 
+    <meta
+      name="viewport"
+      content="height=device-height, 
     width=device-width, initial-scale=1.0, 
     minimum-scale=1.0, maximum-scale=1.0, 
-    user-scalable=no, target-densitydpi=device-dpi">
+    user-scalable=no, target-densitydpi=device-dpi"
+    />
     <link rel="stylesheet" href="styles/main/styles.css" />
     <link rel="stylesheet" href="styles/base/styles.css" />
     <link rel="stylesheet" href="styles/header/styles.css" />
@@ -15,8 +18,8 @@
     <link rel="stylesheet" href="styles/footer/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="styles/responsive/styles.css">
-    <link rel="icon" href="assets/header/favicoicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/responsive/styles.css" />
+    <link rel="icon" href="assets/header/favicoicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
@@ -32,7 +35,19 @@
     <title>Zak Schenck</title>
   </head>
   <body>
-    <div id="particles-js"></div>
+    <div
+      id="vanta-container"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: -1;
+        filter: brightness(0.8);
+      "
+    ></div>
     <div id="bg-fade-div"></div>
     <div id="blur-overlay" class="cmn-line__close-btn"></div>
     <div class="scroll-bar__container">
@@ -40,21 +55,10 @@
     </div>
     <main>
       <header>
-        <img
-          src="assets/header/zlogo.png"
-          alt="Zak logo"
-        />
+        <img src="assets/header/zlogo.png" alt="Zak logo" />
         <nav>
-          <a
-            href="#"
-            onclick="scrollToTop()"
-            >Home</a
-          >
-          <a
-            href="https://github.com/zakschenck"
-            target="_blank"
-            >Github</a
-          >
+          <a href="#" onclick="scrollToTop()">Home</a>
+          <a href="https://github.com/zakschenck" target="_blank">Github</a>
           <a
             href="https://www.linkedin.com/in/zak-schenck-104792222/"
             target="_blank"
@@ -62,10 +66,10 @@
           >
         </nav>
         <div class="hamburger-container">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </header>
 
       <section class="portfolio__home" id="home">
@@ -301,7 +305,7 @@
         </div>
 
         <div class="project" data-aos="fade-left" data-aos-duration="600">
-            <img
+          <img
             src="assets/projects/ewa.png"
             alt="project image"
             class="project-img"
@@ -317,7 +321,7 @@
             </p>
             <p>React&nbsp; Sass/SCSS&nbsp; React-Router</p>
             <div class="links">
-                <a
+              <a
                 href="https://zakschenck.github.io/polyscript-js/"
                 target="_blank"
                 ><img
@@ -338,15 +342,17 @@
         </div>
 
         <div class="project" data-aos="fade-right" data-aos-duration="600">
-            <div class="project-info">
-              <h3>JS Library</h3>
-              <h1>Azureleaf</h1>
-              <p class="description">
-                <span>Javascript</span> utility <span>library</span> for manipulating data structures. Includes objects, array, strings, etc.
-              </p>
-              <p>Javascript ES6+</p>
-              <div class="links">
-                <a
+          <div class="project-info">
+            <h3>JS Library</h3>
+            <h1>Azureleaf</h1>
+            <p class="description">
+              <span>Javascript</span> utility <span>library</span> for
+              manipulating data structures. Includes objects, array, strings,
+              etc.
+            </p>
+            <p>Javascript ES6+</p>
+            <div class="links">
+              <a
                 href="https://zakschenck.github.io/polyscript-js/"
                 target="_blank"
                 ><img
@@ -362,34 +368,74 @@
                   id="ghub"
                   alt="github"
               /></a>
-              </div>
             </div>
-            <img src="assets/projects/azureleaf.png" alt="project image" class="project-img" />
           </div>
+          <img
+            src="assets/projects/azureleaf.png"
+            alt="project image"
+            class="project-img"
+          />
+        </div>
       </section>
 
-          <!-- CONTACT SECTION -->
-    <footer id="contact-section" data-aos="zoom-in" data-aos-duration="600">
+      <!-- CONTACT SECTION -->
+      <footer id="contact-section" data-aos="zoom-in" data-aos-duration="600">
         <h1 id="contact-text">CONTACT</h1>
         <p>Want to work together? Let me know!</p>
-        <form action="https://formspree.io/f/xeqnaqev" method="post" id="contact-form" class="contact-section">
-          <input type="email" required placeholder="Your Email" name="_replyto" />
+        <form
+          action="https://formspree.io/f/xeqnaqev"
+          method="post"
+          id="contact-form"
+          class="contact-section"
+        >
+          <input
+            type="email"
+            required
+            placeholder="Your Email"
+            name="_replyto"
+          />
           <input type="text" id="telephone" placeholder="Your Name" required />
-          <textarea required maxlength="240" class="message-box" placeholder="Your Message" name="message"></textarea>
+          <textarea
+            required
+            maxlength="240"
+            class="message-box"
+            placeholder="Your Message"
+            name="message"
+          ></textarea>
           <button type="submit" id="message">Submit</button>
         </form>
         <p id="created-text">Website created by Zak Schenck</p>
         <div class="socials-footer">
-          <a href="https://www.linkedin.com/in/zak-schenck-104792222/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/zak-schenck-104792222/"
+            target="_blank"
+          >
             <img src="https://img.icons8.com/?size=100&id=8808&format=png" />
           </a>
-          <a href="https://github.com/zakSchenck/" target="_blank"><img src="https://img.icons8.com/?size=100&id=12599&format=png" /></a>
-          <a href="https://codepen.io/ZakSchenck" target="_blank"><img src="https://img.icons8.com/?size=100&id=38382&format=png" /></a>
+          <a href="https://github.com/zakSchenck/" target="_blank"
+            ><img src="https://img.icons8.com/?size=100&id=12599&format=png"
+          /></a>
+          <a href="https://codepen.io/ZakSchenck" target="_blank"
+            ><img src="https://img.icons8.com/?size=100&id=38382&format=png"
+          /></a>
         </div>
       </footer>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <script src="./js/particles-config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+
+    <script>
+      VANTA.DOTS({
+        el: "#vanta-container",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+      });
+    </script>
     <script src="./js/command-line.js"></script>
     <script src="./js/menu.js"></script>
     <script src="js/loading-bar.js"></script>
